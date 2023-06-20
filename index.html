@@ -357,10 +357,15 @@ Buy, sell and find just about anything using the app on your mobile.</div>
     </footer>
 
     <script>
+        var cross = document.getElementById('cross')
         var sell = document.getElementById('sell')
         var login_btn = document.getElementById('login_btn')
         login_btn.addEventListener("click",function () {
             var box_cont = document.getElementById('box_cont').style.display="flex"
+            
+        })
+        cross.addEventListener("click",function () {
+            var box_cont = document.getElementById('box_cont').style.display="none"
             
         })
         sell.addEventListener("click",function () {
