@@ -155,8 +155,8 @@
             <div class="login">
                 <button class="login-btn" id="login_btn">Login</button>
             </div>
-            <div class="sell"><a href="C:\Users\i2\Desktop\New folder (2)\sell page\index.html">
-                <button aria-label="Login" class="sell-btn">
+            <div class="sell">
+                <button id="sell" class="sell-btn">
                     <img src="https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg"
                         alt="">
                     <div class="sell-plus">
@@ -168,6 +168,19 @@
             </div>
         </div>
     </header>
+
+    <div id="post_contain">
+        <img id="logo_img" src="https://image.moengage.com/olxpkproductionmoengage/20211004105100650171S8ALT0olx1pngolxpkproductionmoengage.png" alt="">
+        <span id="main">Sell Your Item</span>
+        <input id="prod_details" placeholder="Enter your name" type="text">
+        <input id="prod_details" placeholder="Enter image URL" type="text">
+        <input id="prod_details" placeholder="Enter your product name" type="text">
+        <input id="prod_details" placeholder="Enter your product description" type="text">
+        <input id="prod_details" placeholder="Enter your product price" type="text">
+        <input id="prod_details" placeholder="Enter your city name" type="text">
+        <input id="prod_details" placeholder="Enter your phone number" type="text">
+        <button id="post_btn">Make a Post</button>
+    </div>
 
 
     <div id="sec_nav">
@@ -344,11 +357,19 @@ Buy, sell and find just about anything using the app on your mobile.</div>
     </footer>
 
     <script>
-        
+        var sell = document.getElementById('sell')
         var login_btn = document.getElementById('login_btn')
         login_btn.addEventListener("click",function () {
             var box_cont = document.getElementById('box_cont').style.display="flex"
             
+        })
+        sell.addEventListener("click",function () {
+            var post_contain = document.getElementById('post_contain').style.display="flex"
+            var rem1 = document.getElementById('ad1').style.display="none"
+            var rem2 = document.getElementById('ad2').style.display="none"
+            var rem3 = document.getElementById('sec_nav').style.display="none"
+            var rem4 = document.getElementById('prod_section').style.display="none"
+            var rem5 = document.getElementById('tryout').style.display="none"
         })
     </script>
 </body>
